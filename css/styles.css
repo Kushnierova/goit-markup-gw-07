@@ -175,8 +175,9 @@ body {
 .mobile-menu-close-icon {
 }
 .mobile-menu-pages {
-  padding-bottom: 284px;
+  padding-bottom: 24px;
 }
+/* ++++++++++++++++++++++++++++++++++++++++++Розібратись з відступом */
 .mobile-menu-item:not(:last-child) {
   padding-bottom: 40px;
 }
