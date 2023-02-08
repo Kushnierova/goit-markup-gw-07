@@ -41,9 +41,23 @@
             </li>
           </ul>
         </nav>
-        <button type="button" class="mobile-menu-open">
-          <svg class="mobile-menu-icon" width="32px" height="22px">
-            <use href="./images/icons.svg#icon-email"></use>
+        <button
+          class="mobile-menu-open button js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg
+            width="32"
+            height="32"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"
+            ></path>
           </svg>
         </button>
         <address>
@@ -62,8 +76,8 @@
         </address>
       </div>
 
-      <div class="mobile-menu">
-        <button class="mobile-menu-close-btn">
+      <div class="mobile-menu js-menu-container" id="mobile-menu">
+        <button type="button" class="mobile-menu-close-btn js-close-menu">
           <svg class="mobile-menu-close-icon" width="8px" height="8px">
             <use href="./images/icons.svg#icon-close-btn"></use>
           </svg>
@@ -621,7 +635,8 @@
         </form>
       </div>
     </div> 
-
-    <script src="./js/modal.js"></script>-->
+-->
+    <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
