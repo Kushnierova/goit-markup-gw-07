@@ -159,8 +159,7 @@ body {
   pointer-events: none;
   z-index: 999;
     transform: translateX(100%);
-  transform: opacity var(--duration) var(--timing-function),
-  visibility var(--duration) var(--timing-function);
+  transition: var(--duration) var(--timing-function);
 }
 .mobile-menu.is-open{
   transform: translateX(0);
@@ -278,9 +277,6 @@ body {
   margin-right: 0;
 }
 
-.mobile-menu-icon {
-  fill: #2e2f42;
-}
 
 /* =================================== HEADER COMPUTER===================================*/
 /* header {
