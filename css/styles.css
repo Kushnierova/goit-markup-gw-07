@@ -639,10 +639,16 @@ header {
 /* =================================== FOOTER =================================== */
 .footer {
   background-color: var(--accent-color);
+  padding: 0 0;
 }
 .footer-container {
   padding-top: 96px;
   padding-bottom: 96px;
+
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  row-gap: 72px;
 }
 .logo-footer {
   display: flex;
@@ -657,12 +663,10 @@ header {
   max-width: 268px;
 }
 .title-social-media {
-  display: flex;
-  justify-content: center;
+  text-align: center;
   margin-top: 72px;
   margin-bottom: 16px;
   color: var(--main-white);
-  margin-bottom: 16px;
 }
 .social-list-icon-footer {
   width: 24px;
@@ -690,7 +694,6 @@ header {
   line-height: 24px;
   background: var(--btn-background-color);
   border-radius: 4px;
-  align-items: center;
   text-align: center;
   letter-spacing: 0.04em;
   color: var(--main-white);
@@ -706,9 +709,6 @@ header {
   top: 50%;
   right: 24px;
   transform: translateY(-50%);
-}
-.send-wrapper {
-  position: relative;
 }
 .subscribe-form-input {
   width: 100%;
@@ -729,44 +729,63 @@ header {
   color: rgba(255, 255, 255, 0.6);
 }
 @media screen and (min-width: 768px) {
+  .logo-footer {
+    justify-content: left;
+  }
+
   .subscribe-form-input {
-    width: 264px;}
+    width: 264px;
+  }
+
+  .title-social-media {
+    text-align: left;
+    margin-top: 0;
+  }
+  .footer-social-media {
+    margin-left: 24px;
+  }
+  .subscribe-form {
+    display: inline;
+  }
+  .subscribe-button {
+    position: relative;
+    padding: 8px 64px 8px 24px;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    background: var(--btn-background-color);
+    border-radius: 4px;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: var(--main-white);
+
+    margin-top: 16px;
+  }
+  .send-wrapper {
+    display: inline;
+    margin-left: 24px;
+    margin-right: 64px;
+  }
 }
-/*
-.subscribe-form-input {
-  width: 264px;
-.subscribe-button {
-
-  margin-left: 24px;
-
-} 
-.footer-container {
-  padding-top: 100px;
-  padding-bottom: 100px;
-  display: flex;
+@media screen and (min-width: 1200px) {
+  .footer-container {
+    display: flex;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .footer-social-media {
+    margin-left: 120px;
+  }
+  .subscribe-button {
+    margin-left: 24px;
+  }
+  .footer-subscribe {
+    margin-left: 80px;
+  }
 }
 
-
-
-.footer-social-media {
-  margin-left: 120px;
-}
-
-
-
-
-.footer-subscribe {
-  margin-left: 80px;
-}
-.subscribe-form-field {
-}
-
-
-
-
-
-
- */
 /* =================================== /FOOTER ===================================*/
 
 /* =================================== MODAL-WINDOW ===================================*/
