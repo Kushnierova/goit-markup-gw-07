@@ -75,7 +75,6 @@
           </ul>
         </address>
       </div>
-
       <div class="mobile-menu js-menu-container" id="mobile-menu">
         <button type="button" class="mobile-menu-close-btn js-close-menu">
           <svg class="mobile-menu-close-icon" width="8px" height="8px">
@@ -85,15 +84,17 @@
         <div class="container-mobile-menu">
           <ul class="mobile-menu-pages list">
             <li class="mobile-menu-item">
-              <a class="mobile-menu-link link" href="index.html">Studio</a>
+              <a class="suptitle mobile-menu-link link" href="index.html"
+                >Studio</a
+              >
             </li>
             <li class="mobile-menu-item">
-              <a class="mobile-menu-link link" href="portfolio.html"
+              <a class="suptitle mobile-menu-link link" href="portfolio.html"
                 >Portfolio</a
               >
             </li>
             <li class="mobile-menu-item">
-              <a class="mobile-menu-link link" href="">Contacts</a>
+              <a class="suptitle mobile-menu-link link" href="">Contacts</a>
             </li>
           </ul>
           <ul class="mobile-contact-link list">
@@ -147,7 +148,7 @@
     <main>
       <section class="section filter-section">
         <div class="container">
-          <h1 class="hidden-title">Portfolio</h1>
+          <!-- <h1 class="hidden-title">Portfolio</h1>
           <ul class="btns-filter list">
             <li>
               <button class="btn-filter button" type="button">All</button>
@@ -164,7 +165,7 @@
             <li>
               <button class="btn-filter button" type="button">Marketing</button>
             </li>
-          </ul>
+          </ul> -->
 
           <!--=================================== CARDS ===================================-->
 
@@ -172,12 +173,28 @@
             <li class="card-link-example">
               <a href="" class="team-list-link link">
                 <div class="team-list-img">
-                  <img
-                    src="images/p-img1.jpg"
-                    alt="Banking App Interface Concept"
-                    width="360"
-                    height="300"
-                  />
+                  <picture>
+                    <source
+                      srcset="./images/p-img1.jpg 1x, ./images/p-img1@2x.jpg 2x"
+                      media="(min-width:1200px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="./images/p-img1-tbl.jpg 1x, ./images/p-img1-tbl2@2x.jpg 2x"
+                      media="(min-width:767px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="./images/p-img1-mbl.jpg 1x, ./images/p-img1-mbl@2x.jpg 2x"
+                      media="(min-width:350px)"
+                      type="image/jpeg"
+                    />
+                    <img
+                      src="./images/p-img1-mbl.jpg"
+                      alt="Banking App Interface Concept"
+                    />
+                  </picture>
+
                   <p class="overlay">
                     14 Stylish and User-Friendly App Design Concepts · Task
                     Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
@@ -382,7 +399,7 @@
     <footer class="footer">
       <div class="container footer-container">
         <div>
-          <a class="logo-link link" href="index.html"
+          <a class="logo-link logo-footer link" href="index.html"
             >WEB<span class="studio studio-footer">STUDIO</span></a
           >
           <p class="section-description-theme-dark">
@@ -430,7 +447,7 @@
             <label class="subscribe-form-field">
               <input
                 type="email"
-                name="user_subscribe-form"
+                name="user_email"
                 class="subscribe-form-input"
                 placeholder="E-mail"
                 required

@@ -260,6 +260,12 @@ header {
     left: 0;
     background-color: var(--main-white);
 
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
@@ -274,6 +280,8 @@ header {
     pointer-events: auto;
   }
   .container-mobile-menu {
+    position: fixed;
+    max-width: 450px;
     padding-top: 80px;
     padding-left: 40px;
     padding-right: 40px;
@@ -281,6 +289,9 @@ header {
   }
   .mobile-menu-close-btn {
     position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     top: 40px;
     right: 40px;
     width: 24px;
@@ -294,7 +305,6 @@ header {
   .mobile-menu-pages {
     padding-bottom: 24px;
   }
-  /* ++++++++++++++++++++++++++++++++++++++++++Розібратись з відступом */
   .mobile-menu-item:not(:last-child) {
     padding-bottom: 40px;
   }
@@ -303,8 +313,9 @@ header {
     color: var(--focus-hover-color);
   }
   .mobile-contact-link {
-    padding-left: ;
+    margin-top: 284px;
   }
+
   .mobile-tel {
     display: inline-block;
     font-weight: 600;
@@ -361,6 +372,17 @@ header {
   background-size: cover;
   padding: 112px 0;
 }
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+  screen and (min-resolution: 192dpi) and (max-width: 767px),
+  screen and (min-resolution: 2dppx) and (max-width: 767px) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-bg-mbl@2x.jpg);
+  }
+}
 .main-title {
   max-width: 318px;
   font-weight: 700;
@@ -385,15 +407,7 @@ header {
 .btn-order:hover {
   background-color: var(--focus-hover-color);
 }
-
-@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
-  screen and (min-resolution: 192dpi) and (max-width: 767px),
-  screen and (min-resolution: 2dppx) and (max-width: 767px) {
-  .hero {
-    background-image: url(../images/hero-bg.jpg);
-  }
-}
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 767px) {
   .hero {
     max-width: 768px;
     background-image: linear-gradient(
@@ -410,11 +424,16 @@ header {
     margin-bottom: 40px;
   }
 }
+
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
   screen and (min-resolution: 192dpi) and (min-width: 768px),
   screen and (min-resolution: 2dppx) and (min-width: 768px) {
   .hero {
-    background-image: url(../images/hero-bg.jpg);
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-bg-tbl@2x.jpg);
   }
 }
 
@@ -436,7 +455,11 @@ header {
   screen and (min-resolution: 192dpi) and (min-width: 1200px),
   screen and (min-resolution: 2dppx) and (min-width: 1200px) {
   .hero {
-    background-image: url(../images/hero-bg.jpg);
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-bg@2x.jpg);
   }
 }
 /* =================================== /HERO =================================== */
@@ -986,7 +1009,7 @@ header {
 
 /* =================================== PORTFOLIO===================================*/
 /* =================================== FILTER ===================================*/
-.filter-section {
+/* .filter-section {
   padding-top: 96px;
 }
 .btns-filter {
@@ -1019,11 +1042,11 @@ header {
   border: 1px solid var(--focus-hover-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-}
+} */
 /* =================================== /FILTER ===================================*/
 /* =================================== CARDS ===================================*/
 
-.cards-link-works {
+/* .cards-link-works {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
@@ -1069,6 +1092,6 @@ header {
 
   background-color: var(--btn-background-color);
   padding: 40px 32px;
-}
+} */
 
 /* =================================== /CARDS ===================================*/
