@@ -967,9 +967,6 @@ header {
   color: #757575;
 
   margin-bottom: 24px;
-
-  /* transition: background-color var(--duration) var(--timing-function),
-  background-image var(--duration) var(--timing-function); */
 }
 .modal-form-check-desc::before {
   display: block;
@@ -1045,38 +1042,6 @@ header {
 } */
 /* =================================== /FILTER ===================================*/
 /* =================================== CARDS ===================================*/
-
-/* .cards-link-works {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  row-gap: 48px;
-  column-gap: 24px;
-}
-
-.text-card-exapmle {
-  background-color: var(--main-white);
-  border: 1px solid #e7e9fc;
-  border-top: none;
-  padding: 32px 16px;
-}
-.card-link-example {
-  transition: box-shadow var(--duration) var(--timing-function);
-}
-.card-link-example:hover,
-.card-link-example:focus {
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-}
-.card-link-example:hover .overlay,
-.team-list-link:focus .overlay {
-  transform: translate(0, 0);
-}
-
-.team-list-img {
-  position: relative;
-  overflow: hidden;
-}
 .overlay {
   position: absolute;
   left: 0;
@@ -1092,6 +1057,54 @@ header {
 
   background-color: var(--btn-background-color);
   padding: 40px 32px;
-} */
+}
+.card-link-example {
+  transition: box-shadow var(--duration) var(--timing-function);
+}
+.card-link-example:hover,
+.card-link-example:focus {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+.card-link-example:hover .overlay,
+.team-list-link:focus .overlay {
+  transform: translate(0, 0);
+}
+.text-card-exapmle {
+  background-color: var(--main-white);
+  border: 1px solid #e7e9fc;
+  border-top: none;
+  padding: 32px 16px;
+}
+.team-list-img {
+  position: relative;
+  overflow: hidden;
+}
+.images-cards{
+width: 396px;
+height: 280px;
+}
+.cards-link-works {
+
+}
+.suptitle-cards{
+text-align: left;
+}
+@media screen and (min-width: 767px) {
+  .images-cards{
+    width: 396px;
+    height: 280px;
+    }
+}
+/* .cards-link-works {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  row-gap: 48px;
+  column-gap: 24px;
+}
+
+
+ */
 
 /* =================================== /CARDS ===================================*/
