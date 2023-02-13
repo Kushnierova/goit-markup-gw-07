@@ -201,6 +201,9 @@ header {
     padding-top: 24px;
     padding-bottom: 24px;
   }
+  .menu-link-index {
+    color: var(--focus-hover-color);
+  }
   .menu-link-index:after {
     position: absolute;
     bottom: 0px;
@@ -211,6 +214,9 @@ header {
     border-radius: 2px;
     display: block;
     content: "";
+  }
+  .menu-link-portfolio {
+    color: var(--focus-hover-color);
   }
   .menu-link-portfolio:after {
     position: absolute;
@@ -826,7 +832,6 @@ header {
     visibility var(--duration) var(--timing-function),
     transform var(--duration) var(--timing-function);
 }
-
 .backdrop.is-hidden {
   transform: scale(0);
   opacity: 0;
@@ -838,7 +843,7 @@ header {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 408px;
+  width: 392px;
 
   padding: 72px 24px 24px 24px;
 
@@ -866,16 +871,25 @@ header {
   cursor: pointer;
 
   transition: background-color var(--duration) var(--timing-function),
-    fill var(--duration) var(--timing-function);
-}
-.modal-close-btn:hover,
-.modal-close-btn:focus {
-  background-color: var(--focus-hover-color);
-}
-.modal-close-btn:hover .modal-close-btn-icon,
+    fill var(--duration) var(--timing-function);}
+
+  .modal-close-btn:hover,
+  .modal-close-btn:focus {
+    background-color: var(--focus-hover-color);
+  }
+  .modal-close-btn:hover .modal-close-btn-icon,
 .modal-close-btn:focus .modal-close-btn-icon {
   fill: var(--main-white);
 }
+
+@media screen and (min-width: 768px) {
+  .modal {
+    width: 408px;
+  }
+}
+@media screen and (min-width: 1200px) {
+}
+
 /* =================================== MODAL-FORM ===================================*/
 .modal-call {
   text-align: center;
@@ -955,8 +969,6 @@ header {
   border: 1px solid var(--btn-background-color);
   border-radius: 4px;
 }
-.modal-form-check {
-}
 .modal-form-check-desc {
   display: flex;
   align-items: center;
@@ -1001,29 +1013,26 @@ header {
 .modal-form-submit:focus {
   background: var(--focus-hover-color);
 }
-
 /* =================================== /MODAL-WINDOW ===================================*/
 
 /* =================================== PORTFOLIO===================================*/
 /* =================================== FILTER ===================================*/
-/* .filter-section {
-  padding-top: 96px;
+.filter-section {
+  padding-top: 48px;
 }
 .btns-filter {
+  padding-bottom: 48px;
   display: flex;
-  align-items: center;
   flex-wrap: wrap;
+  align-items: center;
   justify-content: center;
   column-gap: 24px;
-
-  margin-bottom: 72px;
+  row-gap: 16px;
 }
 .btn-filter {
-  padding: 12px 24px;
+  padding: 8px 16px;
   background: var(--background-light-color);
   border: 1px solid #e7e9fc;
-  display: flex;
-  align-items: center;
   text-align: center;
   color: var(--btn-background-color);
 
@@ -1039,7 +1048,28 @@ header {
   border: 1px solid var(--focus-hover-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-} */
+}
+@media screen and (min-width: 767px) {
+  .filter-section {
+    padding-top: 64px;
+  }
+  .btns-filter {
+    padding-bottom: 64px;
+  }
+  .btn-filter {
+    padding: 12px 24px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .filter-section {
+    padding-top: 96px;
+  }
+  .btns-filter {
+    margin-bottom: 72px;
+  }
+}
+
 /* =================================== /FILTER ===================================*/
 /* =================================== CARDS ===================================*/
 .overlay {
@@ -1080,31 +1110,33 @@ header {
   position: relative;
   overflow: hidden;
 }
-.images-cards{
-width: 396px;
-height: 280px;
+.images-cards {
+  width: 396px;
+  height: 280px;
 }
-.cards-link-works {
-
-}
-.suptitle-cards{
-text-align: left;
+.suptitle-cards {
+  text-align: left;
 }
 @media screen and (min-width: 767px) {
-  .images-cards{
-    width: 396px;
-    height: 280px;
-    }
+  .cards-link-works {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 72px;
+  }
+  .images-cards {
+    width: 356px;
+    height: 300px;
+  }
 }
-/* .cards-link-works {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  row-gap: 48px;
-  column-gap: 24px;
+@media screen and (min-width: 1200px) {
+  .cards-link-works {
+    row-gap: 48px;
+  }
+  .images-cards {
+    width: 360px;
+  }
 }
-
-
- */
-
+/*
 /* =================================== /CARDS ===================================*/
