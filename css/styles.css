@@ -1010,7 +1010,7 @@ header {
   padding-top: 48px;
 }
 .btns-filter {
-  padding-bottom: 48px;
+  margin-bottom: 48px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -1043,13 +1043,12 @@ header {
     padding-top: 64px;
   }
   .btns-filter {
-    padding-bottom: 64px;
+    margin-bottom: 64px;
   }
   .btn-filter {
     padding: 12px 24px;
   }
 }
-
 @media screen and (min-width: 1200px) {
   .filter-section {
     padding-top: 96px;
