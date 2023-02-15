@@ -718,6 +718,7 @@ header {
   background-color: #31d0aa;
 }
 .subscribe-button {
+  display: flex;
   position: relative;
   padding: 8px 64px 8px 24px;
 
@@ -730,6 +731,8 @@ header {
   letter-spacing: 0.04em;
   color: var(--main-white);
   margin-top: 16px;
+  margin-right: 115px;
+  margin-left: 115px;
 }
 .subscribe-button:hover,
 .subscribe-button:focus {
@@ -760,13 +763,7 @@ header {
 .footer-social-media {
   max-width: 208px;
 }
-.subscribe-button{
-align-items: center;
-}
-.subscribe-form{
-  display: inline-block;
-align-items: center;
-}
+
 @media screen and (min-width: 768px) {
   .logo-footer {
     justify-content: left;
